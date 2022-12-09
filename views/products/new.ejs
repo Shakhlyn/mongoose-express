@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Product</title>
+  </head>
+  <body>
+    <h1>Creating product</h1>
+
+    <form action="/products" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <label for="price">Price:</label>
+      <input type="float" id="price" name="price" />
+      <label for="category">Category:</label>
+      <select name="category" id="category">
+        <option value="milk">Milk</option>
+        <option value="food">Food</option>
+        <option value="extra">extra</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <div>
+      <a href="/products">Home page</a>
+    </div>
+  </body>
+</html>
